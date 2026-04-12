@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@unseas0nedmeat — All Links</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Barlow+Condensed:wght@600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+
+:root{
+--blood:#C0392B;--blood2:#9B2335;--gold:#F1C40F;
+--dark:#080808;--surface:#111;--panel:#161616;
+--edge:#232323;--muted:#555;--light:#F0F0EC;
+--yt:#FF0000;--twitch:#9146FF;--kick:#53FC18;
+--discord:#5865F2;
+}
+
+body{
+background:var(--dark);
+color:var(--light);
+font-family:'Barlow',sans-serif;
+min-height:100vh;
+}
+
+/* GLOW */
+.bg-glow{
+position:fixed;
+top:-200px;left:50%;
+transform:translateX(-50%);
+width:700px;height:700px;
+background:radial-gradient(ellipse,rgba(192,57,43,0.08),transparent 70%);
+}
+
+/* LAYOUT */
+.page{
+max-width:520px;
+margin:auto;
+padding:60px 20px;
+}
+
+/* HEADER */
+.header{text-align:center;margin-bottom:40px;}
+
+.avatar-wrap{position:relative;display:inline-block;margin-bottom:20px;}
+
+.avatar-ring{
+position:absolute;inset:-4px;border-radius:50%;
+background:conic-gradient(var(--blood),var(--gold),var(--blood2));
+animation:spin 8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+.avatar-inner{
+width:88px;height:88px;border-radius:50%;
+overflow:hidden;
+border:3px solid var(--dark);
+position:relative;
+}
+
+.avatar-inner img{
+width:100%;height:100%;
+object-fit:cover;
+}
+
+/* TEXT */
+.brand-name{
+font-family:'Bebas Neue';
+font-size:36px;letter-spacing:3px;
+}
+
+.brand-handle{
+font-size:13px;color:var(--blood);
+margin-bottom:12px;
+}
+
+.brand-bio{
+font-size:14px;color:#aaa;line-height:1.7;
+}
+
+/* SECTION */
+.section{
+margin:30px 0 10px;
+font-size:11px;
+letter-spacing:3px;
+color:#555;
+}
+
+/* CARDS */
+.link{
+display:flex;
+align-items:center;
+gap:14px;
+padding:14px 18px;
+background:var(--panel);
+border:1px solid var(--edge);
+border-radius:10px;
+text-decoration:none;
+color:var(--light);
+margin-bottom:6px;
+transition:0.2s;
+position:relative;
+}
+
+.link:hover{
+transform:translateX(4px);
+background:var(--surface);
+}
+
+/* ACCENT BAR */
+.link::before{
+content:'';
+position:absolute;
+left:0;top:0;bottom:0;
+width:3px;
+transform:scaleY(0);
+transition:0.2s;
+}
+.link:hover::before{transform:scaleY(1);}
+
+/* COLORS */
+.yt::before{background:var(--yt);}
+.twitch::before{background:var(--twitch);}
+.kick::before{background:var(--kick);}
+.discord::before{background:var(--discord);}
+.x::before{background:#fff;}
+
+.text{flex:1;}
+.platform{font-size:10px;color:#666;letter-spacing:1px;}
+.handle{font-size:17px;font-weight:700;}
+.desc{font-size:12px;color:#888;}
+
+.badge{
+position:absolute;
+right:14px;
+top:10px;
+font-size:9px;
+background:var(--blood);
+padding:2px 6px;
+}
+</style>
+</head>
+
+<body>
+<div class="bg-glow"></div>
+
+<div class="page">
+
+<!-- HEADER -->
+<div class="header">
+<div class="avatar-wrap">
+<div class="avatar-ring"></div>
+<div class="avatar-inner">
+<img src="profile.jpg" alt="profile">
+</div>
+</div>
+
+<div class="brand-name">UNSEAS0NEDMEAT</div>
+<div class="brand-handle">@unseas0nedmeat</div>
+<div class="brand-bio">
+<strong>Shorts pull you in. Full videos hit harder.</strong><br>
+No sponsors. No filter. Just real gaming takes.
+</div>
+</div>
+
+<!-- YOUTUBE -->
+<div class="section">YOUTUBE</div>
+
+<a class="link yt" href="https://youtube.com/@unseas0nedmeat">
+<span class="badge">MAIN</span>
+<div class="text">
+<div class="platform">Gaming Rants</div>
+<div class="handle">@unseas0nedmeat</div>
+<div class="desc">Full breakdowns & takes</div>
+</div>
+</a>
+
+<a class="link yt" href="https://youtube.com/@unseas0nedraw">
+<div class="text">
+<div class="platform">Clips & Reactions</div>
+<div class="handle">@unseas0nedraw</div>
+<div class="desc">Shorts that pull people in</div>
+</div>
+</a>
+
+<a class="link yt" href="https://youtube.com/@unseasonedgamerz">
+<div class="text">
+<div class="platform">Let's Play</div>
+<div class="handle">@unseasonedgamerz</div>
+<div class="desc">Full gameplay sessions</div>
+</div>
+</a>
+
+<!-- LIVE -->
+<div class="section">LIVE</div>
+
+<a class="link twitch" href="https://twitch.tv/unseas0nedmeat">
+<div class="text">
+<div class="platform">Twitch</div>
+<div class="handle">@unseas0nedmeat</div>
+<div class="desc">Live debates</div>
+</div>
+</a>
+
+<a class="link kick" href="https://kick.com/unseas0nedmeat">
+<div class="text">
+<div class="platform">Kick</div>
+<div class="handle">@unseas0nedmeat</div>
+<div class="desc">No restrictions streams</div>
+</div>
+</a>
+
+<!-- SOCIALS -->
+<div class="section">SOCIALS</div>
+
+<a class="link" href="https://tiktok.com/@unseas0nedmeat">
+<div class="text">
+<div class="platform">TikTok</div>
+<div class="handle">@unseas0nedmeat</div>
+<div class="desc">Clips & moments</div>
+</div>
+</a>
+
+<a class="link" href="https://instagram.com/unseas0nedmeat">
+<div class="text">
+<div class="platform">Instagram</div>
+<div class="handle">@unseas0nedmeat</div>
+<div class="desc">Behind the scenes</div>
+</div>
+</a>
+
+<a class="link x" href="https://x.com/unseas0nedmeat">
+<div class="text">
+<div class="platform">X</div>
+<div class="handle">@unseas0nedmeat</div>
+<div class="desc">Hot takes & quick rants</div>
+</div>
+</a>
+
+<a class="link discord" href="https://discord.gg/YOURINVITE">
+<div class="text">
+<div class="platform">Discord</div>
+<div class="handle">Join the community</div>
+<div class="desc">Argue, debate, game</div>
+</div>
+</a>
+
+</div>
+</body>
+</html>
